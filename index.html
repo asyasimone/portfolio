@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="title">
+                <h1 class="header1">Asya Hambrick</h1>
+                <h2>Web Developer</h2>
+            </div>
+        </div>
+        <!---------------about---------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <img src="images/aboutimg.jpg">
+                    </div>
+                    <div class="col2">
+                        <h1 class="header2">About Me</h1>
+                        <p>Hi my name is Asya. I am 30 years old. Ever since I can remember, I have been in love with languages
+                            I was mesmerised by the sight of code language for the first time at the age of 13. Coding takes languages
+                        to another level. After that moment I have been motivated to surround myself with different languages.
+                        I studied at The Art Institute of Washington, where i earned a bac+2 in graphic and web design. There I learned
+                        HTML, CSS, Javascript, Jquery, Illustrator, Indesign, Photoshop, etc. Originally I had planned to finish with a Diplome:
+                        bac+4. Unfortunately working three different jobs wasn't enough to cover the costs of tuition. In the year 2021 I moved to
+                        France to learn the french language and continue my studies in web development and datat scsience. Adaptation, dedication,
+                        and learning new things are what motivates me. Changing my life for the sake of languages didn't come easily. Nothing that's
+                        worth it comes easy, and the reward of succeesing feels so much better.
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <!-----------------slide-show----------------->
+        <div id="slide-show">
+            <div class="container">
+                <div class="row">
+                    <div class="col2">
+                        <div class="slide-titles">
+                            <p class="slide-links active-link">SKILLS
+                              <ul class="slide-content">
+                                <li><span>Front-end Web Developement</span><br>HTML, CSS and Javascript</li>
+                                <li><span>Design</span><br>Photoshop, Illustrator, Indesign</li>
+                                <li><span>Back-end</span><br>Lamguage program C</li>
+                              </ul>
+                            </p>
+                            <p class="slide-links">REFERENCES
+                              <ul class="slide-content">
+                                <li><span>Dorothee</span><br>Reference letter</li>
+                                <li><span>Peopel Animals Love</span><br>Referece letter</li>
+                              </ul>
+                            </p>
+                            <p class="slide-links">EDUCATION
+                              <ul class="slide-content">
+                                <li><span>2014 - 2016</span><br>The Art Institute of Washington</li>
+                                <li><span>2023</span><br>DELF french language B2 level</li>
+                                <li><span>2024 - 2025</span><br>Le Wagon</li>
+                              </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------slide test----------------->
+        <div id="slide-show2">
+          <div class="testcontainer swiper">
+            <div class="card-wrap">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <p class="card-title">Skills</p>
+                    <img src="images/skills.png">
+                </li>
+                <li class="card-item swiper-slide">
+                    <p class="card-title">Education</p>
+                    <img src="images/education.png">
+                </li>
+                <li class="card-item swiper-slide">
+                    <p class="card-title">References</p>
+                    <img src="images/lettre-de-recommandation.png">
+                    <img src="images/letter-of-recommendationPAL.png">
+                    <button class="card-button fa-solid fa-chevron-right"></button>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <!-----------------Linking to swiper script----------------->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-----------------Linking to script.js----------------->
+        <script src="script.js"></script>
+    </body>
+</html>
