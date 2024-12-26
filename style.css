@@ -63,18 +63,18 @@ nav ul li a::after{
 }
 
 nav ul li a:hover{
-    color: #6d493b;
+  color: #6d493b;
 }
 
 nav ul li a:hover::after{
-    left: 0;
-    width: 100%;
+  left: 0;
+  width: 100%;
 }
 
 /*-----------------home header-----------------*/
 .title{
-    margin-top: 15%;
-    margin-left: 10%;
+  margin-top: 15%;
+  margin-left: 10%;
 }
 
 .header1{
@@ -87,56 +87,100 @@ nav ul li a:hover::after{
 /* ----------------about-------------------- */
 
 #about{
-    padding: 80px 0px;
-    color: black
-
+  padding: 80px 0px;
+  color: black;
 }
 
 .row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .col1{
-    flex-basis: 50%;
-
+  flex-basis: 50%;
 }
 
 .col1 img{
-    width: 100%;
-    border-radius: 15px;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .col2{
-    flex-basis: 48%;
+  flex-basis: 48%;
 }
 
 .header2{
-    font-size: 30px;
-    font-weight: 600;
-    color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
 }
 
+/* -----------------about tabs----------------- */
 
-/* -----------------slide test----------------- */
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #6d493b;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span{
+  color: #6d493b;
+  font-size: 14px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+/* -----------------slide show----------------- */
 .swipe-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 img{
-    width: 80%;
-    border-radius: 10px;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .card-list {
   display: flex;
   gap: 20px;
   padding: 20px;
-  overflow: hidden;
 }
 
 .card-list .card-item {
@@ -145,7 +189,7 @@ img{
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 
@@ -169,7 +213,7 @@ img{
 }
 
 .card-wrap {
-  width: 65%;
+  /*width: 65%;*/
   color: white;
   text-align: center;
   border-radius: 15px;
@@ -177,10 +221,10 @@ img{
 }
 
 
-.swiper-button-prev {
+/*.swiper-button-prev {
   margin-left: 15%;
 }
 
 .swiper-button-next {
   margin-right: 15%;
-}
+}*/
