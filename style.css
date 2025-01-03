@@ -4,10 +4,16 @@
   box-sizing: border-box;
 
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #c19b87;
   color: #6d493b;
 }
+
 #header{
   width: 100%;
   height: 100vh;
@@ -87,6 +93,8 @@ nav ul li a:hover::after{
 /* ----------------about-------------------- */
 
 #about{
+  width: 100%;
+  height: 100vh;
   padding: 80px 0px;
   color: black;
 }
@@ -163,68 +171,77 @@ nav ul li a:hover::after{
   display: block;
 }
 
-/* -----------------slide show----------------- */
+/* -----------------index slide show----------------- */
 .swipe-container {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
+  background: black;
 }
 
-img{
-  width: 80%;
-  border-radius: 10px;
+.slide-header {
+  text-align: center;
+  margin: 80px 0 80px;
 }
 
-.card-list {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+.card-list .card-item{
+  list-style: none;
 }
-
-.card-list .card-item {
+.card-list .card-item .card-link {
+  margin: auto;
+  width: 800px;
   display: block;
+  background: #6d493b;
   padding: 18px;
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  /*margin: auto;*/
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+  border: #6d493b;
 }
 
 
-.card-list .card-item .card-button {
-  border-radius: 50%;
-  padding: 10px 12px;
-  cursor: pointer;
-}
-
-.card-list .card-item .card-image {
+.card-list .card-link .card-image {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.card-item {
-  background-color: #6d493b;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.card-wrap {
-  /*width: 65%;*/
-  color: white;
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: black;
+  font-weight: 600;
   text-align: center;
-  border-radius: 15px;
-  font-size: 25px;
+  margin: 10px 0;
 }
 
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #c19b87;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #c19b87;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
 
-/*.swiper-button-prev {
+.card-list .card-link:hover .card-button {
+  color: #6d493b;
+  background: #c19b87;
+}
+
+.swiper-button-prev {
   margin-left: 15%;
 }
 
 .swiper-button-next {
   margin-right: 15%;
-}*/
+}
+
+/* -----------------immopoly slide show----------------- */

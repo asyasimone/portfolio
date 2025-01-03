@@ -15,10 +15,10 @@
           <div class="container">
               <nav>
                   <ul>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Portfolio</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Home</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#portfolio-slide-show">Portfolio</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#header">Home</a></li>
                   </ul>
               </nav>
           </div>
@@ -29,72 +29,79 @@
         </div>
         <!---------------about---------------->
         <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col1">
-                        <img src="images/aboutimg.jpg">
-                    </div>
-                    <div class="col2">
-                        <h1 class="header2">About Me</h1>
-                        <p>Je m'appelle Asya, je suis une citoyenne américaine passionnée par les langages. Je suis arrivée en France il y a trois ans pour apprendre le Français, une nouvelle culture, continuer mes études pour enfin trouver un boulot dans la tech.
-                        J'aime apprendre de nouvelles connaissances, mais également la résolution de problèmes.
-                        Je suis sociable, étant de nature créative j'aime la peinture sur toile, la sculpture mais aussi la lecture.
-                        </p>
-                        <!-----------------about tabs----------------->
-                      <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Education</p>
-                        <p class="tab-links">References</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                      <ul>
-                        <li><span>Front-end Web</span><br>HTML, CSS, JavaScript</li>
-                        <li><span>Design</span><br>Photoshop, Illustrator, Indesign</li>
-                        <li><span>Back-end Web</span><br>Ruby on Rails, C</li>
-                      </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                      <ul>
-                        <li><span>2014-2016</span><br>Bac+2 Web design: The Art Institute of Washington</li>
-                        <li><span>2023</span><br>Diplome de la lange francais: CEREL de Versailles</li>
-                        <li><span>2024</span><br>RNCP niveau 6, Bac+3/4 Developement Web: Le Wagon</li>
-                      </ul>
-                    </div>
-                    <div class="tab-contents" id="references">
-                      <ul>
-                        <li><span>Mr. Brouwer</span><br>PAL</li>
-                        <li><span>Dorothee</span><br>fille au pair</li>
-                      </ul>
-                    </div>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col1">
+                <img src="images/aboutimg.jpg">
+              </div>
+              <div class="col2">
+                <h1 class="header2">About Me</h1>
+                <p>Je m'appelle Asya, je suis une citoyenne américaine passionnée par les langages. Je suis arrivée en France il y a trois ans pour apprendre le Français, une nouvelle culture, continuer mes études pour enfin trouver un boulot dans la tech.
+                  J'aime apprendre de nouvelles connaissances, mais également la résolution de problèmes.
+                  Je suis sociable, étant de nature créative j'aime la peinture sur toile, la sculpture mais aussi la lecture.
+                </p>
+                <!-----------------about tabs----------------->
+                <div class="tab-titles">
+                  <p class="tab-links active-link">Skills</p>
+                  <p class="tab-links">Education</p>
+                  <p class="tab-links">References</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>Front-end Web</span><br>HTML, CSS, JavaScript</li>
+                    <li><span>Design</span><br>Photoshop, Illustrator, Indesign</li>
+                    <li><span>Back-end Web</span><br>Ruby on Rails, C</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>2014-2016</span><br>Bac+2 Web design: The Art Institute of Washington</li>
+                      <li><span>2023</span><br>Diplome de la lange francais: CEREL de Versailles</li>
+                      <li><span>2024</span><br>RNCP niveau 6, Bac+3/4 Developement Web: Le Wagon</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="references">
+                  <ul>
+                    <li><span>Mr. Brouwer</span><br>PAL</li>
+                    <li><span>Dorothee</span><br>fille au pair</li>
+                  </ul>
                 </div>
               </div>
+            </div>
           </div>
+        </div>
         <!-----------------slide show----------------->
-        <div id="slide-show">
+        <div id="portfolio-slide-show">
           <div class="swipe-container swiper">
-            <p class="slide-header">immopoly.co</p>
+            <h1 class="slide-header">Portfolio</h1>
             <div class="card-wrap">
               <ul class="card-list swiper-wrapper">
                 <li class="card-item swiper-slide">
+                  <a href="immolopy.html" class="card-link">
                     <p class="card-title">home page</p>
-                    <img src="images/homepage.png">
-                </li>
-                <li class="card-item swiper-slide">
-                    <p class="card-title">page 2t</p>
-                    <img src="images/research.png">
-                </li>
-                <li class="card-item swiper-slide">
-                    <p class="card-title">page 3</p>
-                    <img src="images/popup.png">
-                    <!----<img src="images/letter-of-recommendationPAL.png">---->
+                    <img src="images/homepage.png" alt="Card Image" class="card-image">
                     <button class="card-button fa-solid fa-chevron-right"></button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <p class="card-title">page 2t</p>
+                    <img src="images/research.png" alt="Card Image" class="card-image">
+                    <button class="card-button fa-solid fa-chevron-right"></button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <p class="card-title">page 3</p>
+                    <img src="images/popup.png" alt="Card Image" class="card-image">
+                    <button class="card-button fa-solid fa-chevron-right"></button>
+                  </a>
                 </li>
               </ul>
-
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
+          </div>
         </div>
         <!-----------------Linking to swiper script----------------->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
