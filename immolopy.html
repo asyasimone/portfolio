@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio Website</title>
+        <!-- Linking to font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="style.css" type="text/css">
         <!-- Link Swiper's CSS -->
@@ -12,11 +13,53 @@
     </head>
     <body>
       <div class="immopoly-container">
-        <h1 class="immopoly-header">Immopoly</h1>
-        <h2>About</h2>
-        <p>lijd owihjfnkahjfkjawncnsz n</p>
         <div class="project-immop-slideshow">
-
+          <nav>
+            <ul>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#portfolio-slide-show">Portfolio</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+          <h1 class="immopoly-header">Immopoly</h1>
+          <div class="swipe-container swiper">
+            <div class="immop-slide-header">
+              <h1> Tech Languages Used:</h1>
+              <p>HTML, JavaScript, Ruby on Rails, SCSS, bootstrap</p>
+            </div>
+            <div class="card-wrap">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="immolopy.html" class="card-link">
+                    <p class="card-title">HOME PAGE</p>
+                    <img src="images/homepage.png" alt="Card Image" class="card-image">
+                    <button class="card-button fa-solid fa-chevron-right"></button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <p class="card-title">page 2t</p>
+                    <img src="images/research.png" alt="Card Image" class="card-image">
+                    <button class="card-button fa-solid fa-chevron-right"></button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <p class="card-title">page 3</p>
+                    <img src="images/popup.png" alt="Card Image" class="card-image">
+                    <button class="card-button fa-solid fa-chevron-right"></button>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-----------------Linking to swiper script----------------->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-----------------Linking to script.js----------------->
+      <script src="script.js"></script>
     </body>

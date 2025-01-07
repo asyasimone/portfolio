@@ -23,8 +23,8 @@
               </nav>
           </div>
           <div class="title">
-              <h1 class="header1">Asya Hambrick</h1>
-              <h2>Web Developer</h2>
+              <h1 class="index-header1">Asya Hambrick</h1>
+              <h2 class="index-header2">Web Developer</h2>
             </div>
         </div>
         <!---------------about---------------->
@@ -35,7 +35,7 @@
                 <img src="images/aboutimg.jpg">
               </div>
               <div class="col2">
-                <h1 class="header2">About Me</h1>
+                <h1 class="about-header1">About Me</h1>
                 <p>Je m'appelle Asya, je suis une citoyenne américaine passionnée par les langages. Je suis arrivée en France il y a trois ans pour apprendre le Français, une nouvelle culture, continuer mes études pour enfin trouver un boulot dans la tech.
                   J'aime apprendre de nouvelles connaissances, mais également la résolution de problèmes.
                   Je suis sociable, étant de nature créative j'aime la peinture sur toile, la sculpture mais aussi la lecture.
@@ -62,15 +62,28 @@
                 </div>
                 <div class="tab-contents" id="references">
                   <ul>
-                    <li><span>Mr. Brouwer</span><br>PAL</li>
-                    <li><span>Dorothee</span><br>fille au pair</li>
+                    <li><span>Mr. Brouwer</span><br><button class="reference-popup" data-popup="first-popup">PAL</button></li>
+                    <li><span>Dorothee</span><br><button class="reference-popup" data-popup="second-popup">fille au pair</button></li>
                   </ul>
+                  <div class="popup first-popup">
+                    <div class="popup-inner">
+                      <img src="images/letter-of-recommendationPAL.png" alt="PAL reference letter">
+                      <button class="close-popup">X</button>
+                    </div>
+                  </div>
+                  <div class="popup second-popup">
+                    <div class="popup-inner">
+                      <img src="images/lettre-de-recommandation.png" alt="Au Pair reference letter">
+                      <button class="close-popup">X</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-----------------slide show----------------->
+        <!-----------------slide show-----------------
+
         <div id="portfolio-slide-show">
           <div class="swipe-container swiper">
             <h1 class="slide-header">Portfolio</h1>
@@ -78,7 +91,7 @@
               <ul class="card-list swiper-wrapper">
                 <li class="card-item swiper-slide">
                   <a href="immolopy.html" class="card-link">
-                    <p class="card-title">home page</p>
+                    <p class="card-title">IMMOPOLY</p>
                     <img src="images/homepage.png" alt="Card Image" class="card-image">
                     <button class="card-button fa-solid fa-chevron-right"></button>
                   </a>
@@ -102,7 +115,7 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-----------------Linking to swiper script----------------->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-----------------Linking to script.js----------------->
