@@ -104,6 +104,10 @@ nav ul li a:hover::after{
   height: 100vh;
   padding: 80px 0px;
   color: black;
+  background-image: url(images/brown-corner-design.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25%;
 }
 
 .row{
@@ -184,6 +188,16 @@ nav ul li a:hover::after{
   display: block;
 }
 
+.reference-popup {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 6px;
+  cursor: pointer;
+  background: #e0bba7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+}
+
 /* -----------------ref letters popup----------------- */
 
 .popup {
@@ -191,12 +205,21 @@ nav ul li a:hover::after{
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   background: white;
   border: 1px solid #ccc;
   z-index: 1000;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#img1{
+  width: 100%;
+  height: 100%;;
+  padding: 0 25% 0 25%;
 }
 
 .popup-inner {
@@ -206,7 +229,7 @@ nav ul li a:hover::after{
 .close-popup {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 26%;
   cursor: pointer;
   background: none;
   border: none;
@@ -300,7 +323,7 @@ nav ul li a:hover::after{
 }
 
 .immopoly-header {
-  padding: 28px 94px 28px;
+  padding: 0px 94px 0px;
   font-family: 'Zapfino', sans-serif;
 }
 
@@ -317,4 +340,9 @@ nav ul li a:hover::after{
 
 .immopoly-container .swipe-container {
   background: #c19b87;
+}
+
+.immopoly-container .project-immop-slideshow nav {
+ margin-right: 10%;
+ padding-top: 10px;
 }

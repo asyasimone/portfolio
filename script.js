@@ -22,29 +22,21 @@ for (let i = 0; i < tablinks.length; i++) {
     this.classList.add('active-link');
     tabcontents[i].classList.add('active-tab');
   });
-}
+};
 
 
   //reference letters popup
-document.querySelectorAll('.popup').forEach((popup) => {
-  popup.addEventListener('click', function () {
-    this.style.display = 'none';
-  });
-
-  popup.querySelector('.popup-inner').addEventListener('click', function (e) {
-    e.stopPropagation();
-    console.log(e);
-  });
-
-  popup.querySelector('.close-popup').addEventListener('click', function () {
-    popup.style.display = 'none';
-  });
-});
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.popup').forEach((popup) => {
-      popup.style.display = 'none';
+  document.querySelectorAll('.reference-popup').forEach(button => {
+    button.addEventListener('click', function () {
+      const popupClass = this.getAttribute('data-popup');
+      const popup = document.querySelector(`.${popupClass}`);
+      popup.style.display = 'block'; // Show the popup
     });
-  }
-});
+  });
+
+  // Close popup
+  document.querySelectorAll('.close-popup').forEach(button => {
+    button.addEventListener('click', function () {
+      this.closest('.popup').style.display = 'none'; // Hide the popup
+    });
+  });
