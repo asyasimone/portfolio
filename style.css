@@ -236,10 +236,14 @@ nav ul li a:hover::after{
   font-size: 16px;
 }
 
-/* -----------------index slide show----------------- */
+/* -----------------index portfolio slide show----------------- */
 .swipe-container {
   min-height: 100vh;
   background: black;
+  background-image: url(images/black-corner-design.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 25%;
 }
 
 .slide-header {
@@ -313,6 +317,29 @@ nav ul li a:hover::after{
 .swiper-button-next {
   margin-right: 15%;
   color: #c19b87;
+}
+
+/* -----------------contact form----------------- */
+
+#contact{
+  height: 100vh;
+  padding: 80px 0px;
+  color: black;
+  background-image: url(images/brown-corner-design.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25%;
+}
+
+.contact-header{
+  font-family: 'Zapfino', sans-serif;
+  font-size: 40px;
+  font-weight: 1000;
+  color: #6d493b;
+}
+
+.contact-left{
+  position: relative;
 }
 
 /* -----------------immopoly slide show----------------- */
